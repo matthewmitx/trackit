@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Taylor's Version Tracker</title>
+    <link id="styler" rel="stylesheet" href="assets/css/plain.css">
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script type="text/javascript" src="assets/js/loading.js"></script>
+	<script type="text/javascript" src="assets/js/loadTrackData.js"></script>
+    <script type="text/javascript" src="assets/js/drawChart.js"></script>
+	<script type="text/javascript" src="assets/js/buttonAction.js"></script>
+</head>
+
+<body>
+	<div id="load">
+		<h5>Loading...</h5>
+	</div>
+    <div id="contents">
+		<div id="headerDiv">
+			<h1 id="title" class="albumContent">Track It (Taylor's Version)</h1>
+			<img id='homeButton' src="assets/img/homebtn.png" height=20 width=20 onClick='homeClick()'>
+		</div>
+
+		<div id="contentDiv">
+			<div id="playerDiv" class = "player">
+				<img id='playerImg' height="325px" width="325px">
+				<h3 id='trackLabel'></h3>
+				<h4 id='artistLabel'>Taylor Swift</h4>
+				<div id='spotifyButtons'>
+					<img id='backButton' src='assets/img/backbtn.png' height="22px" width="22px" onClick='backClick()'>
+					<img id='playButton' src='assets/img/playbtn.png' height="65px" width="65px" onClick='playOnSpotify()' onmouseover="showPlayLabel()" onmouseout="hidePlayLabel()">
+					<img id='fwdButton' src='assets/img/fwdbtn.png' height="22px" width="22px" onClick='fwdClick()'>
+				</div>
+				<h6 id='playButtonLabel' class='hid'>Play on Spotify</h6>
+			</div>
+
+			<div id="chartDiv">
+				<div id="curve_chart" style="width: 800px; height: 600px"></div>
+			</div>
+		</div>
+		
+		<div id='footerDiv'>
+			<!-- <h5 id='credits'>Created By: Matthew Mitchell</h5> -->
+		</div>
+	</div>
+
+</body>

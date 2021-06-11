@@ -1,0 +1,134 @@
+@font-face {
+    font-family: tungsten; /* red */
+    src: url("../font/tungsten.ttf");
+}
+
+@font-face {
+    font-family: gothamBold; /* spotify */
+    src: url("../font/gotham-bold.otf");
+}
+
+@font-face {
+    font-family: gothamLight;
+    src: url('../font/gotham-light.otf');
+}
+
+html {
+    color: #ebe9dd;
+    background-color: black;
+    background: linear-gradient(to bottom, #9e4853 0%, #443b46 100%);
+}
+
+#headerDiv {
+    text-align: left;
+    display: inline-flex;
+    color: #ebe9dd;
+    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 1px;
+    padding-left: 50px;
+    padding-right: 30px;
+    margin: 0px;
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+#title {
+    margin-right: 915px;
+}
+
+#homeButton {
+    display: inline-flex;
+    float: right;
+    margin: 30px;
+}
+
+#homeButton:hover {
+    content: url('../img/homebtndark.png');
+    cursor: pointer;
+}
+
+#contentDiv {
+    display: inline-flex;
+    padding-bottom: 15px;
+}
+
+.player {
+    font-family: gothamBold;
+}
+
+#playerDiv {
+    display: inline-block;
+    text-align: left;
+    padding: 30px;
+    margin: 20px;
+    margin-top: 5px;
+    /* padding-bottom: 30px; */
+    background: linear-gradient(to bottom, #9e4853 0%, #a99679 100%);
+    border-radius: 15px;
+}
+
+#playerImg {
+    content:url("../img/red.png");
+    margin-bottom: 25px;
+}
+
+#artistLabel{
+    font-family: gothamLight;
+    color: #d3d3cf;
+    margin-top: 0px;
+}
+
+#spotifyButtons {
+    text-align: center;
+}
+
+#backButton {
+    padding-right: 33px;
+    padding-bottom: 22px;
+    cursor: pointer;
+}
+
+#backButton:hover {
+    content: url('../img/backbtndark.png');
+}
+
+#playButton {
+    cursor: pointer;
+}
+
+#playButton:hover {
+    content: url('../img/playbtndark.png');
+}
+
+#fwdButton {
+    padding-left: 33px;
+    padding-bottom: 22px;
+    cursor: pointer;
+}
+
+#fwdButton:hover {
+    content: url('../img/fwdbtndark.png');
+}
+
+#chartDiv {
+    padding: 0px;
+    margin: 20px;
+    margin-left: 0px;
+    margin-top: 5px;
+    background: linear-gradient(to bottom, #9e4853 0%, #a99679 100%);
+    border-radius: 15px;
+}
+
+
+.albumContent {
+    font-family: tungsten;
+}
+
+#footerDiv {
+   font-family: tungsten;
+   color: #ebe9dd;
+   text-align: right;
+   padding-right: 40px;
+}

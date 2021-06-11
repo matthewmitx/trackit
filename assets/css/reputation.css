@@ -1,0 +1,172 @@
+@font-face {
+    font-family: engraversOldEnglish; /* reputation */
+    src: url("../font/OPTIEngraversOldEnglish.otf");
+}
+
+@font-face {
+    font-family: gothamBold; /* spotify */
+    src: url("../font/gotham-bold.otf");
+}
+
+@font-face {
+    font-family: gothamLight;
+    src: url('../font/gotham-light.otf');
+}
+
+html {
+    color: #f7f8f2;
+    background-color: black;
+    background: linear-gradient(to bottom, #333333 0%, #000000 100%);
+}
+
+#load{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 9999;
+    text-align: center;
+    margin-top: 25%;
+    font-size: 30px;
+    font-family: engraversOldEnglish;
+}
+
+#headerDiv {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    color: #e3e3e3;
+    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 1px;
+    padding-left: 50px;
+    padding-right: 30px;
+    margin: 0px;
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    width: 100%;
+}
+
+#title {
+    float:left;
+}
+
+#homeButton {
+    display: inline-flex;
+    float: right;
+    margin: 30px;
+    margin-right: 70px;
+    margin-top: 40px;
+}
+
+#homeButton:hover {
+    content: url('../img/homebtndark.png');
+    cursor: pointer;
+}
+
+#contentDiv {
+    display: inline-flex;
+    padding-bottom: 15px;
+}
+
+.player {
+    font-family: gothamBold;
+}
+
+#playerDiv {
+    display: inline-block;
+    text-align: left;
+    padding: 30px;
+    margin: 20px;
+    margin-top: 5px;
+    padding-bottom: 30px;
+    background: linear-gradient(to bottom, #333333 0%, #676767 100%);
+    border-radius: 15px;
+    max-width: 330px;
+}
+
+#playerImg {
+    content:url("../img/rep.png");
+    margin-bottom: 25px;
+}
+
+#artistLabel{
+    font-family: gothamLight;
+    color: #e3e3e3;
+    margin-top: 0px;
+}
+
+#spotifyButtons {
+    text-align: center;
+}
+
+#backButton {
+    padding-right: 33px;
+    padding-bottom: 22px;
+    cursor: pointer;
+}
+
+#backButton:hover {
+    content: url('../img/backbtndark.png');
+}
+
+#playButton {
+    cursor: pointer;
+}
+
+#playButton:hover {
+    content: url('../img/playbtndark.png');
+}
+
+#fwdButton {
+    padding-left: 33px;
+    padding-bottom: 22px;
+    cursor: pointer;
+}
+
+#fwdButton:hover {
+    content: url('../img/fwdbtndark.png');
+}
+
+#playButtonLabel {
+    display: inline-block;
+    background: black;
+    opacity: 50%;
+    padding: 5px;
+    margin: 5px 128px;
+    margin-top: 7px;
+    font-size: 10px;
+    font-family: gothamLight;
+    color: white;
+    text-align: center;
+    z-index:1;
+}
+
+.hid {
+    visibility: hidden;
+}
+
+.vis {
+    visibility: visible;
+}
+
+#chartDiv {
+    padding: 0px;
+    margin: 20px;
+    margin-left: 0px;
+    margin-top: 5px;
+    background: linear-gradient(to bottom, #333333 0%, #676767 100%);
+    border-radius: 15px;
+}
+
+
+.albumContent {
+    font-family: engraversOldEnglish;
+}
+
+#footerDiv {
+   font-family: engraversOldEnglish;
+   color: #e3e3e3;
+   text-align: right;
+   padding-right: 40px;
+}

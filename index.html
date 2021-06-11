@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Taylor's Version Tracker</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<script type="text/javascript" src="assets/js/updateTracksSelector.js"></script>
+	<script type="text/javascript" src="assets/js/validation.js"></script>
+	<script type="text/javascript" src="assets/js/scroll.js"></script>
+</head>
+<body>
+	<div id='container'>
+		<div id='headerLeftDiv' class='header headerLeftHidden sticky'>
+			<button class='asText' onClick='scrollToHome()'>track it (taylor's version)</button>
+		</div>
+		<div id='headerRightDiv' class='header headerRight sticky'>
+			<button class='asText' onClick='scrollToHome()'>home</button>
+			<button class='asText' onClick='scrollToAbout()'>about</button>
+			<button class='asText' onClick='scrollToChoice()'>track</button>
+		</div>
+	</div>
+	<div id='titleDiv' class='homepage'>
+		<h1 class="homepage">track it (taylor's version)</h2>
+		<p class="homepage">Visualize the performace of the Taylor's Version tracks compared to their originals.<br> Performance is determined
+		by each song's Spotify popularity score.</p>
+		<button id='beginButton' class='homepageButton' onClick='scrollToAbout()' class='homepage folklore'>begin</button>
+	</div>
+	<div id="aboutDiv">
+		<h5>about</h5>
+		<div id='aboutInfoDiv' class='infoBox'>
+			<p>Taylor Swift is a singer, songwriter, and businesswoman known not only for
+				hit songs such as <i>Shake It Off</i> and <i>Love Story</i>, but also for her sincerity 
+				to fans and love for music. Since 2006, she has poured her heart into her work and created
+				nine original albums to showcase her talent. Despite her deeply personal involvement in her musical 
+				projects, her previous record label refused to sell her the ownership rights to her first six 
+				albums - <i>Taylor Swift, Fearless, Speak Now, Red, 1989, </i> and <i> Reputation</i>. These albums
+				have instead been sold multiple times without consent from Swift. 
+				This betrayal left her no choice but to rerecord these six albums and therefore reclaim ownership
+				of her work.
+				<br>
+				<br>
+				As we witness the execution of this bold business strategy by
+				Swift, we hope to see the success of her efforts reflected in 
+				sales, streams, and airplay. <i>Track It (Taylor's Version)</i>
+				attempts to moniter the level of this success through daily tracking of 
+				Swift's catelog on Spotify. 
+				<br>
+				<br>
+				Spotify provides a metric called "popularity" that measures the performance of a song by 
+				worldwide streaming patterns. Overall streams contribute to popularity, but recent streams
+				have the greatest influence on this metric. This measurement is critical to
+				a song's success on Spotify, as it heavily influences the probability that a track will
+				be recommended to listeners and added to Spotify's major playlists. 
+				<br>
+				<br>
+				<i>Track It (Taylor's Version)</i>
+				has been collecting this data daily to produce a visual representation of the performance of Swift's
+				rerecorded catelog compared to the original counterpart. We hope that this tool will remind 
+				<span id='swiftieSpan'></span> of the
+				importance of streaming Taylor's Version.
+			</p>
+		</div>
+		<button class='homepageButton' onClick='scrollToChoice()'>continue</button>
+	</div>
+	<div id="secondSectionDiv">
+		<div id='infoDiv'>
+			<p>choose an album and track</p>
+		</div>
+		<div id='selectionDiv'>
+			<div id='albumSelectorDiv'>
+				<label for="album" id="selectAlbumLabel">album</label>
+				<select name="album" id="selectElementAlbum" class="selectors">
+					<option value="default" selected="true" disabled="disabled">-- select album --</option>
+					<option value="Debut">Debut</option>
+					<option value="Fearless">Fearless</option>
+					<option value="SpeakNow">Speak Now</option>
+					<option value="Red">Red</option>
+					<option value="1989">1989</option>
+					<option value="Reputation">Reputation</option>
+					<option value="Lover" disabled="disabled">Lover</option>
+					<option value="Folklore" disabled="disabled">Folklore</option>
+					<option value="Evermore" disabled="disabled">Evermore</option>
+					<option value="Woodvale" disabled="disabled">Woodvale</option>
+				</select>
+			</div>
+			<div id="trackSelectorDiv">
+					<label for="track" id="selectTrackLabel">track</label>
+					<select name="track" id="selectElementTrack" class="selectors">
+						<option value="default" selected="true" disabled="disabled">-- select track --</option>
+					</select>
+			</div>
+			<button id="readyButton" class='homepageButton' onClick="validateChoice()" class="folklore">...ready for it?</button>
+		</div>	
+	</div>
+	<div>
+		<div id='creditDiv'>
+			<h5 id='credits'>created by: matthew mitchell</h5>
+		</div>
+		<div id='copyrightDiv'>
+			<h5>not affiliated with taylor swift, spotify, or republic records</h5>
+		</div>
+	</div>
+</body>
+</html>

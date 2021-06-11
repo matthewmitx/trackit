@@ -1,0 +1,263 @@
+/* css styles for track it */
+
+html {
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: satisfaction; /* debut */
+    src: url("../font/satisfaction.ttf");
+}
+
+@font-face {
+    font-family: engraversGothic; /* fearless */
+    src: url("../font/engravers_gothic.otf");
+}
+
+@font-face {
+    font-family: sudestada; /* speak now */
+    src: url("../font/sudestada.ttf");
+}
+
+@font-face {
+    font-family: tungsten; /* red */
+    src: url("../font/tungsten.ttf");
+}
+
+@font-face {
+    font-family: nineteen; /* 1989 */
+    src: url("../font/1989font.ttf");
+}
+
+@font-face {
+    font-family: engraversOldEnglish; /* reputation */
+    src: url("../font/OPTIEngraversOldEnglish.otf");
+}
+
+@font-face {
+    font-family: gothamBold; /* spotify */
+    src: url("../font/gotham-bold.otf");
+}
+
+@font-face {
+    font-family: gothamLight;
+    src: url('../font/gotham-light.otf');
+}
+
+@font-face {
+    font-family: imFellEnglish; /* folklore */
+    src: url("../font/IMFellEnglish-Italic.ttf");
+}
+
+body {
+    background-image: url("../img/taylorintheweeds.jpeg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: scroll;
+    background-size: 100%;
+    overflow: visible;
+    height: fit-content;
+    width: auto;
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky + .content {
+    padding-top: 102px;
+}
+
+.header{
+    position: sticky;
+    background-color: white;
+    margin: -20px;
+    margin-top: 0px;
+    padding: 10px;
+
+    font-family: imFellEnglish;
+    font-size: 20px;
+}
+
+#container {
+    display: inline-flex;
+}
+
+.headerLeftHidden {
+    visibility: hidden;
+}
+
+.headerLeftActive {
+    visibility: visible;
+    float: left;
+    text-align: left;
+    
+}
+
+.headerRight {
+    text-align: center;
+}
+
+.headerRightShared {
+    background: transparent;
+    float: right;
+    text-align: right;
+}
+
+.asText {
+    background:none;
+    border:none;
+    margin:0;
+    padding: 0px 30px;
+    cursor: pointer;
+    font-family: imFellEnglish;
+    font-size: 20px;
+}
+
+.asText:hover{
+    color:rgb(154, 96, 75);
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#titleDiv {
+    padding: 40px;
+    margin: 0px 20px;
+    margin-bottom: 210px;
+}
+
+.homepage {
+    font-family: imFellEnglish;
+    text-align: center;
+}
+
+h1.homepage {
+    text-align: center;
+    font-size: 90px;
+    /* border-style: solid; */
+    /* border-color: green; */
+    /* border-width: 2px; */
+    margin-top: 150px;
+    margin-bottom: 0px;
+    padding: 20px;
+}
+
+p.homepage {
+    font-size: 30px;
+}
+
+.homepageButton {
+    font-family: imFellEnglish;
+    font-size: 25px;
+    width: 100px;
+}
+
+.homepageButton:hover{
+    color:rgb(154, 96, 75);
+}
+
+#aboutDiv {
+    /* position: absolute; */
+    /* padding: 70px; */
+    margin: 70px;
+    margin-bottom: 180px;
+    padding-bottom: 0px;
+    font-family: imFellEnglish;
+    font-size: 45px;
+}
+
+#aboutInfoDiv {
+    background-color: black;
+    opacity: 35%;
+    border-radius: 15px;
+    font-size: 21px;
+    font-family: gothamLight;
+    color: white;
+    /* padding-bottom: 500px; */
+}
+
+#aboutDiv h5 {
+    padding: 20px;
+    padding-bottom: 5px;
+    margin: 0px;
+}
+
+#aboutDiv p {
+    padding: 20px;
+    /* padding-bottom: 0px; */
+    margin: 0px;
+}
+
+#swiftieSpan:before{
+    content: 'Swift fans';
+}
+#swiftieSpan:hover:before {
+    content: 'Swifties';
+}
+
+#secondSectionDiv {
+    margin: 70px;
+    margin-bottom: 30px;
+}
+
+#infoDiv {
+    font-family: imFellEnglish;
+    font-size: 45px;
+}
+
+#infoDiv p {
+    text-align: left;
+}
+
+#secondSectionDiv {
+    margin-bottom: 237px;
+    padding-bottom: 100px;
+}
+
+.folklore {
+    font-family: imFellEnglish;
+}
+
+.selectors {
+    width: 300px;
+    font-size: 25px;
+    font-family: imFellEnglish;
+    margin-bottom: 30px;
+}
+
+#selectAlbumLabel {
+    font-family: imFellEnglish;
+    font-size: 25px;
+    padding-right: 16px;
+    width: 150px;
+}
+
+#selectTrackLabel {
+    font-family: imFellEnglish;
+    font-size: 25px;
+    padding-right: 27px;
+    width: 150px;
+}
+
+#readyButton {
+    width: 150px;
+}
+
+#creditDiv {
+    font-family: imFellEnglish;
+    color: white;
+    float: left;
+    padding-left: 40px;
+}
+
+ #copyrightDiv {
+    font-family: imFellEnglish;
+    color: white;
+    float: right;
+    padding-right: 40px;
+}
