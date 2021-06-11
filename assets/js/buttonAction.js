@@ -1,7 +1,7 @@
 /* Javascript function to control spotify buttons */
 
 function homeClick() {
-    var url = new URL("http://127.0.0.1:5500/index.html");
+    var url = new URL("http://matthewmitx.github.io/trackit/");
     window.location.href = url;
 }
 
@@ -13,7 +13,7 @@ function fwdClick() {
         var trackAsInt = parseInt(trackNo);
         trackAsInt = trackAsInt + 1;
         
-        var url = new URL("http://127.0.0.1:5500/result.html");
+        var url = new URL("http://matthewmitx.github.io/trackit/result.html");
         var params = {albumName:album, trackNumber:trackAsInt.toString()};
         url.search = new URLSearchParams(params).toString();
 
@@ -29,7 +29,7 @@ function backClick() {
         var trackAsInt = parseInt(trackNo);
         trackAsInt = trackAsInt - 1;
         
-        var url = new URL("http://127.0.0.1:5500/result.html");
+        var url = new URL("http://matthewmitx.github.io/trackit/result.html");
         var params = {albumName:album, trackNumber:trackAsInt.toString()};
         url.search = new URLSearchParams(params).toString();
 

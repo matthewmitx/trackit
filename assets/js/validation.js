@@ -16,7 +16,7 @@ function validateChoice(){
 }
 
 function redirectAndRetrieve(album,trackNo){
-	var url = new URL("http://127.0.0.1:5500/result.html");
+	var url = new URL("http://matthewmitx.github.io/trackit/result.html");
 	var params = {albumName:album, trackNumber:trackNo};
 	url.search = new URLSearchParams(params).toString();
 

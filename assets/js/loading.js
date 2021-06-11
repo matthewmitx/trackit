@@ -1,3 +1,5 @@
+/* javascript loading animation before page is ready */
+
 document.onreadystatechange = function () {
     var state = document.readyState
     if (state == 'interactive') {
