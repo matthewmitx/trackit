@@ -52,7 +52,7 @@ html {
 
 body {
     background-image: url("../img/taylorintheweeds.jpeg");
-    background-repeat: no-repeat;
+    background-repeat:repeat-y;
     background-position: left top;
     background-attachment: scroll;
     background-size: 100%;
@@ -129,6 +129,7 @@ body {
     padding: 40px;
     margin: 0px 20px;
     margin-bottom: 210px;
+
 }
 
 .homepage {
