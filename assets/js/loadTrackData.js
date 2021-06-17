@@ -92,7 +92,7 @@ function retrieveData(){
     album = queryString['albumName'];
     trackNo = queryString['trackNumber'];
 
-	var url = new URL("http://localhost:3000/load");
+	var url = new URL("http://trackit-env-1.eba-iwhvhtvd.us-west-1.elasticbeanstalk.com/product/load");
 	var params = {trackNumber:trackNo, albumName:album};
 
 	url.search = new URLSearchParams(params).toString();
