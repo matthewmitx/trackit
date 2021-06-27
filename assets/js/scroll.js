@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function() {
         // console.log('current pos ' + window.pageYOffset);
 
         if (window.pageYOffset > titleTop) {
-            console.log(window.pageYOffset);
             headerLeftDiv.classList.remove('headerLeftHidden');
             headerLeftDiv.classList.add('headerLeftActive');
 
