@@ -53,11 +53,20 @@ html {
 }
 
 #homeButton {
+    margin-left: 20px;
+}
+
+#moreButtons {
     display: inline-flex;
     float: right;
     margin: 30px;
     margin-right: 70px;
     margin-top: 40px;
+}
+
+#instagramButton:hover {
+    content: url('../img/iglogodark.png');
+    cursor: pointer;
 }
 
 #homeButton:hover {

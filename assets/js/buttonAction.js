@@ -5,6 +5,10 @@ function homeClick() {
     window.location.href = url;
 }
 
+function instagramClick() {
+    window.open('https://www.instagram.com/matthewmitchell_/','_blank');
+}
+
 function fwdClick() {
     album = queryString["albumName"];
     trackNo = queryString["trackNumber"];
