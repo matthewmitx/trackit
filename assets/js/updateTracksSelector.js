@@ -58,7 +58,7 @@ function removeOptions(selectElement) {
 function addDefaultOption(selectElement){
 	var defaultOption = document.createElement('option');
 	defaultOption.value = '0';
-	defaultOption.innerHTML = '-- Select Track --';
+	defaultOption.innerHTML = '-- select track --';
 	defaultOption.selected = 'true';
 	defaultOption.disabled = 'disabled';
 	selectElement.appendChild(defaultOption);
