@@ -250,10 +250,21 @@ p.homepage {
 }
 
 #creditDiv {
+    display: inline-flex;
     font-family: imFellEnglish;
     color: white;
     float: left;
     padding-left: 40px;
+}
+
+#instagramButton {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#instagramButton:hover {
+    content: url('../img/iglogodark.png');
+    cursor: pointer;
 }
 
  #copyrightDiv {

@@ -46,3 +46,7 @@ function scrollToAbout() {
 function scrollToChoice() {
     window.scrollTo(0,1500);
 };
+
+function instagramClick() {
+    window.open('https://www.instagram.com/matthewmitchell_/','_blank');
+}
