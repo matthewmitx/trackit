@@ -252,7 +252,7 @@ p.homepage {
 #creditDiv {
     display: inline-flex;
     font-family: imFellEnglish;
-    color: white;
+    color: black;
     float: left;
     padding-left: 40px;
 }
@@ -269,7 +269,7 @@ p.homepage {
 
  #copyrightDiv {
     font-family: imFellEnglish;
-    color: white;
+    color: black;
     float: right;
     padding-right: 40px;
 }
