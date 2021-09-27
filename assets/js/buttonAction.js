@@ -53,6 +53,14 @@ function hidePlayLabel(){
     playLabel.classList.add('hid');
 }
 
+function submitFeedback(){
+    var fbName = document.getElementById('fname');
+    var fbAlbum = document.getElementById('favalbum');
+    var fbText = document.getElementById('feedback');
+    
+    // to-do : http request with values from these
+}
+
 function playOnSpotify() {
     if(queryString['albumName'] == 'Fearless'){
         switch(queryString['trackNumber']) {

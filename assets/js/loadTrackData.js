@@ -106,7 +106,7 @@ function retrieveData(){
 }
 
 function parseTrackData(data){
-	console.log('parseTrackData::data successfully retrieved')
+	console.log('parseTrackData::data successfully retrieved');
 
 	var dict = {};
 	var track = '';
@@ -132,6 +132,7 @@ function parseTrackData(data){
 	trackTV = track + ' (Taylor\'s Version)';
 	trackName = trackTV;
 	setTrackLabel(trackTV);
+	changeAlbumImg();
 
 	var chartData = [['Date', track, trackTV]];
 
@@ -152,6 +153,12 @@ function setTrackLabel(trackName) {
 	document.getElementById('trackLabel').innerHTML = trackName;
 }
 
+function changeAlbumImg(){
+	if(queryString['albumName'] == "1989" && queryString['trackNumber'] == '9'){
+		playerImg = document.getElementById('playerImg');
+		playerImg.src = '../img/wildestart.jpeg';
+	}
+}
 
 function formatDate(date) {
 	var res = date.split('-');
