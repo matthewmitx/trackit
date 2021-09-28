@@ -207,6 +207,7 @@ html {
 #feedback{
     margin-top: 3px;
     margin-bottom: 5px;
+    width:90%;
 }
 
 .fbk{
@@ -214,7 +215,6 @@ html {
 }
 
 .fbkres{
-    width: 680px;
     height: 100px;
 }
 
