@@ -126,6 +126,13 @@ function playOnSpotify() {
                 break;
         }
     }
+    else if(queryString['albumName'] == '1989'){
+        switch(queryString['trackNumber']) {
+            case '9':
+                window.open('https://open.spotify.com/track/1Ov37jtRQ2YNAe8HzfczkL?si=41913313502c497e','_blank');
+                break;
+        }
+    }
     else{
         alert(trackName + ' not yet available.');
     }
